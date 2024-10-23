@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connexion - JS Formation</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+     <!-- SPINNER -->
+     <div id="loadingSpinner" class="spinner" style="display: none;"></div>
+
+    <div class="login-wrapper">
+        <!-- Image gauche -->
+        <img src="../photo_Joe-removebg-preview.png" alt="Photo de Joe" class="side-image">
+
+        <!-- Formulaire de connexion -->
+        <div class="login-container">
+            <!-- Logo -->
+            <div class="logo">
+                <h1>Formation JS</h1>
+            </div>
+
+            <form class="login-form">
+                <h2>Connexion</h2>
+                <div class="input-group email-container">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Entrez votre email" required>
+                    <span></span>
+                </div>
+                <div class="input-group password-container">
+                    <label for="password">Mot de passe</label>
+                    <input type="password" id="password" name="password" placeholder="Entrez votre mot de passe" required>
+                    <p id="progress-bar"></p>
+                    <span></span>
+                </div>
+                <button type="submit" class="login-btn">Se connecter</button>
+            </form>
+        </div>
+
+        <!-- Image droite -->
+        <img src="../photo_cv-removebg-preview.png" alt="Photo de Joe" class="side-image">
+    </div>
+
+<script type="module" src="./index.js"></script>
+</body>
+</html>

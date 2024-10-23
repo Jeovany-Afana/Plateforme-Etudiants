@@ -1,0 +1,202 @@
+/* Style global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    overflow-x: hidden;
+}
+
+/* En-tête */
+header {
+    background-color: #000;
+    color: #FFD700;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin-left: 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #FFD700;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #fff;
+}
+
+/* Section principale (Hero) */
+.hero {
+    background-color: #FFD700;
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    height: 90vh;
+    padding: 0 20px;
+    gap: 20px;
+}
+
+.hero-content {
+    flex: 1;
+    padding: 20px;
+}
+
+.hero h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+}
+
+.cta-button {
+    background-color: #000;
+    color: #FFD700;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #333;
+}
+
+.hero-image {
+    max-width: 400px;
+    width: 40%;
+    height: auto;
+    object-fit: contain;
+}
+
+/* Section À propos */
+.about-section {
+    padding: 60px 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.about-section h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.about-section p {
+    font-size: 1.2rem;
+    color: #666;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Section Programme */
+.programme-section {
+    padding: 60px 20px;
+    background-color: #000;
+    color: #FFD700;
+    text-align: center;
+}
+
+.programme-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.programme-section ul {
+    list-style: none;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.programme-section ul li {
+    font-size: 1.2rem;
+    padding: 10px 0;
+    border-bottom: 1px solid #FFD700;
+}
+
+/* Pied de page */
+footer {
+    background-color: #000;
+    color: #FFD700;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        height: auto;
+        padding: 40px 20px;
+    }
+
+    .hero h2 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .hero-image {
+        max-width: 300px;
+        width: 70%;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h2 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 0.9rem;
+    }
+
+    .hero-image {
+        max-width: 250px;
+        width: 100%;
+    }
+
+    .cta-button {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+
+    .about-section h2, .programme-section h2 {
+        font-size: 2rem;
+    }
+
+    .about-section p, .programme-section ul li {
+        font-size: 1rem;
+    }
+}
