@@ -13,14 +13,19 @@
         <div class="logo">
             <h1>JS Formation</h1>
         </div>
+        <p id="username"></p>
         <nav>
             <ul>
-                <li><a href="./login/index.html" style="font-size: 2rem;">Connexion</a></li>
+                <li><a href="./seances/index.html" id="seances">Voir les séances</a></li>
                 <li><a href="#programme">Programme</a></li>
-                <li><a href="#contact">Contact</a></li>
+                
             </ul>
         </nav>
     </header>
+
+    <a id="loginButton" class="login-button" href="./login/index.html">Se connecter</a>
+    <!-- Bouton de déconnexion -->
+<button id="logoutButton" class="logout-button">Déconnexion</button>
 
     <!-- Section principale -->
     <section class="hero">
@@ -42,13 +47,29 @@
     <section id="programme" class="programme-section">
         <h2>Programme de la formation</h2>
         <ul>
-            <li>Introduction à JavaScript et les bases</li>
-            <li>Manipulation du DOM</li>
-            <li>Gestion des données et des API</li>
-            <li>Programmation orientée objet</li>
-            <li>Intégration de Firebase</li>
+            <li>
+                <h3>Introduction à JavaScript et les bases</h3>
+                <p>Apprenez les bases du langage JavaScript, de la syntaxe aux structures fondamentales comme les variables, les conditions, et les boucles, pour poser les fondations d'une carrière en développement web.</p>
+            </li>
+            <li>
+                <h3>Manipulation du DOM</h3>
+                <p>Découvrez comment JavaScript peut interagir avec le contenu HTML pour créer des interfaces web dynamiques. Apprenez à manipuler des éléments de la page en fonction des actions de l'utilisateur et à modifier la structure des pages à la volée.</p>
+            </li>
+            <li>
+                <h3>Gestion des données et des API</h3>
+                <p>Apprenez à récupérer des données provenant d'API externes et à les intégrer dans votre application. Vous apprendrez à envoyer des requêtes, à traiter les réponses et à manipuler les informations en temps réel dans vos projets.</p>
+            </li>
+            <li>
+                <h3>Programmation orientée objet</h3>
+                <p>Passez à un niveau supérieur avec la programmation orientée objet. Apprenez à structurer vos applications JavaScript avec des objets et des classes, pour rendre votre code plus organisé, réutilisable et maintenable.</p>
+            </li>
+            <li>
+                <h3>Intégration de Firebase</h3>
+                <p>Découvrez comment intégrer Firebase dans vos projets JavaScript. Apprenez à utiliser l'authentification, à stocker des données en temps réel et à créer des applications full-stack sans avoir besoin d'un serveur.</p>
+            </li>
         </ul>
     </section>
+    
 
     <!-- Pied de page -->
     <footer>
@@ -56,8 +77,24 @@
     </footer>
 
     <script type="module">
-        // Firebase configuration script here...
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.14.0/firebase-app.js"; // Pour initialiser l'application Firebase
+        
+        //Configuration de l'application Firebase
+        const firebaseConfig = {
+            apiKey: "AIzaSyCe06QITLo_0Fz1KnYotWHpZhKg-mubt40",
+            authDomain: "plateforme-etudiants.firebaseapp.com",
+            projectId: "plateforme-etudiants",
+            storageBucket: "plateforme-etudiants.appspot.com",
+            messagingSenderId: "831210693947",
+            appId: "1:831210693947:web:fbb0460069826b781e431e",
+            measurementId: "G-K6JMJEXQHE"
+          };
+        //Initialiser Firebase avec la configuration fournie
+        const app = initializeApp(firebaseConfig);
+  
     </script>
+
+    <script type="module" src="./index.js"></script>
 
 </body>
 </html>

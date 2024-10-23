@@ -7,7 +7,7 @@
 }
 
 body {
-    background-color: #f4f4f4;
+    background-color: #FFD700;
     color: #333;
     overflow-x: hidden;
 }
@@ -24,6 +24,13 @@ header {
 
 header h1 {
     margin-left: 20px;
+}
+
+header p
+{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
 }
 
 nav ul {
@@ -200,3 +207,50 @@ footer {
         font-size: 1rem;
     }
 }
+
+
+/*CSS Pour le bouton login*/
+.login-button {
+    margin-top: 0.5%;
+    display: inline-block; /* Pour que le lien soit comme un bouton */
+    padding: 10px 20px; /* Espacement à l'intérieur */
+    background-color: black; /* Couleur du fond du bouton */
+    color: #FFD700; /* Couleur du texte */
+    text-align: center; /* Centrer le texte */
+    text-decoration: none; /* Enlever le soulignement */
+    border-radius: 5px; /* Coins arrondis */
+    transition: background-color 0.3s ease; /* Transition douce pour l'effet de survol */
+    cursor: pointer; /* Curseur de pointeur */
+  }
+  
+  .login-button:hover {
+    background-color: #b3a700; /* Couleur de fond au survol */
+  }
+
+
+  /* Bouton de déconnexion */
+/* Styles pour le bouton de déconnexion */
+.logout-button {
+  background-color: #ff4d4d; /* Couleur de fond rouge */
+  color: white; /* Couleur du texte */
+  border: none; /* Pas de bordure */
+  border-radius: 5px; /* Coins arrondis */
+  padding: 10px 20px; /* Espacement intérieur */
+  font-size: 16px; /* Taille de la police */
+  cursor: pointer; /* Curseur en forme de main */
+  transition: background-color 0.3s, transform 0.2s; /* Transitions pour les effets */
+  margin-bottom: 0.5%;
+  margin-top: 0.5%;
+}
+
+.logout-button:hover {
+  background-color: #ff1a1a; /* Couleur de fond lors du survol */
+  transform: scale(1.05); /* Effet d'agrandissement */
+}
+
+.logout-button:active {
+  transform: scale(0.95); /* Effet d'enfoncement */
+}
+
+
+
