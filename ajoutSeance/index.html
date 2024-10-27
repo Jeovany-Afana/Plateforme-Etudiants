@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enregistrer une Séance</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Enregistrer une Séance</h2>
+        <form id="sessionForm">
+            <!-- Titre de la séance -->
+            <label for="title">Titre de la Séance</label>
+            <input type="text" id="title" name="title" required>
+
+            <!-- Date de la séance -->
+            <label for="date">Date</label>
+            <input type="date" id="date" name="date" required>
+
+            <!-- Description de la séance -->
+            <label for="description">Description</label>
+            <textarea id="description" name="description" required></textarea>
+
+            <!-- Téléversement de fichiers HTML/CSS/JS -->
+            <label for="htmlFile">Fichier HTML</label>
+            <input type="file" id="htmlFile" name="htmlFile" accept=".html" required>
+
+            <label for="cssFile">Fichier CSS</label>
+            <input type="file" id="cssFile" name="cssFile" accept=".css" required>
+
+            <label for="jsFile">Fichier JavaScript</label>
+            <input type="file" id="jsFile" name="jsFile" accept=".js" required>
+
+            <!-- Bouton d'envoi -->
+            <button type="submit">Enregistrer la Séance</button>
+        </form>
+    </div>
+    <script type="module" src="./app.js"></script>
+</body>
+</html>

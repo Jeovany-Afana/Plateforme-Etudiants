@@ -4,3 +4,60 @@ h1
     font-style: italic;
     text-align: center;
 }
+
+#session-container {
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 90%;
+    max-width: 800px;
+}
+
+.session-box {
+
+    background-color: #000000;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.session-header {
+    font-size: 1.5em;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.session-description {
+    font-size: 1em;
+    color: #ffffff;
+}
+
+.download-buttons {
+    margin: 0 auto;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.download-button {
+    padding: 10px 15px;
+    background-color: #ffd900;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.download-button:hover {
+    background-color: #fcfcfc;
+}
