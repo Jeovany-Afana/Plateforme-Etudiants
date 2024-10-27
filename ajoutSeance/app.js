@@ -41,12 +41,14 @@ document.getElementById("sessionForm").addEventListener("submit", async (e) => {
   const htmlFile = document.getElementById("htmlFile").files[0];
   const cssFile = document.getElementById("cssFile").files[0];
   const jsFile = document.getElementById("jsFile").files[0];
+  const wordFile = document.getElementById("wordFile").files[0];
 
   try {
     // Téléversement des fichiers et obtention de leurs URLs
     const htmlURL = await uploadFile(htmlFile, "html_files");
     const cssURL = await uploadFile(cssFile, "css_files");
     const jsURL = await uploadFile(jsFile, "js_files");
+    const wordURL = await uploadFile(wordFile, "word_files");
 
     // Ajout de la séance à Firestore
     await addDoc(collection(db, "seances"), {
@@ -56,6 +58,7 @@ document.getElementById("sessionForm").addEventListener("submit", async (e) => {
       htmlURL,
       cssURL,
       jsURL,
+      wordURL,
     });
 
     alert("Séance enregistrée avec succès !");

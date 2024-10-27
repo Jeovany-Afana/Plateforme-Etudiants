@@ -60,7 +60,7 @@ document.addEventListener("DOMContentLoaded", async () => {
       buttonHTML.className = "download-button";
       buttonHTML.href = session.htmlURL;
       buttonHTML.target = "_blank";
-      buttonHTML.download = "";
+      buttonHTML.download = "index.html";
       buttonHTML.textContent = `Télécharger ${"HTML"}`;
       downloadButtons.appendChild(buttonHTML);
 
@@ -68,7 +68,7 @@ document.addEventListener("DOMContentLoaded", async () => {
       buttonCSS.className = "download-button";
       buttonCSS.href = session.cssURL;
       buttonCSS.target = "_blank";
-      buttonCSS.download = "";
+      buttonCSS.download = "style.css";
       buttonCSS.textContent = `Télécharger ${"CSS"}`;
       downloadButtons.appendChild(buttonCSS);
 
@@ -76,9 +76,17 @@ document.addEventListener("DOMContentLoaded", async () => {
       buttonJS.className = "download-button";
       buttonJS.href = session.jsURL;
       buttonJS.target = "_blank";
-      buttonJS.download = "";
+      buttonJS.download = "index.js";
       buttonJS.textContent = `Télécharger ${"JS"}`;
       downloadButtons.appendChild(buttonJS);
+
+      const buttonWORD = document.createElement("a");
+      buttonWORD.className = "download-button";
+      buttonWORD.href = session.wordURL;
+      buttonWORD.target = "_blank";
+      buttonWORD.download = "introductionJS.docx"; //Le nom du fichier que l'utilisateur va télécharger
+      buttonWORD.textContent = `Télécharger ${"Word"}`; // Correction ici
+      downloadButtons.appendChild(buttonWORD);
 
       sessionBox.appendChild(downloadButtons);
       container.appendChild(sessionBox);
