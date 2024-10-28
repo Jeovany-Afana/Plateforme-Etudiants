@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", async () => {
       // Create and append title
       const title = document.createElement("div");
       title.className = "session-header";
-      title.textContent = session.title;
+      title.innerHTML = `${session.title} <br> <span style="font-size:1rem;">${session.date}</span>`;
       sessionBox.appendChild(title);
 
       // Create and append description
